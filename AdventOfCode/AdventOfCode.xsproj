@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(XSharpMsBuildDir)\XSharp.Default.props" />
+  <PropertyGroup>
+    <ProjectGuid>18354166-646a-4d9c-a359-64b0e7126248</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AdventOfCode</RootNamespace>
+    <AssemblyName>AdventOfCode</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Name>AdventOfCode</Name>
+    <Nologo>true</Nologo>
+    <GenerateFullPaths>true</GenerateFullPaths>
+    <Dialect>Core</Dialect>
+    <vo15>false</vo15>
+    <OutputName>AdventOfCode</OutputName>
+    <XSharpProjectversion>2.8.3.15</XSharpProjectversion>
+    <StartupObject />
+    <OVF>True</OVF>
+    <EnforceSelf>True</EnforceSelf>
+    <Allowdot>True</Allowdot>
+    <INS>True</INS>
+    <Vo10>True</Vo10>
+    <Vo2>True</Vo2>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Label="Configuration">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <EmitDebugInformation>true</EmitDebugInformation>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'" Label="Configuration">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <EmitDebugInformation>false</EmitDebugInformation>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(XSharpMsBuildDir)\XSharp.targets" />
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\DayGenerator.prg" />
+    <Compile Include="Base\SolverConsoleRummer.prg" />
+    <Compile Include="Base\SolverBase.prg" />
+    <Compile Include="Day01\Day01Solver.prg" />
+    <Compile Include="Day02\Day02Solver.prg" />
+    <Compile Include="Day03\Day03Solver.prg" />
+    <Compile Include="Day04\Day04Solver.prg" />
+    <Compile Include="Day05\Day05Solver.prg" />
+    <Compile Include="Day06\Day06Solver.prg" />
+    <Compile Include="Day07\Day07Solver.prg" />
+    <Compile Include="Day08\Day08Solver.prg" />
+    <Compile Include="Day09\Day09Solver.prg" />
+    <Compile Include="Day10\Day10Solver.prg" />
+    <Compile Include="Day11\Day11Solver.prg" />
+    <Compile Include="Day12\Day12Solver.prg" />
+    <Compile Include="Day13\Day13Solver.prg" />
+    <Compile Include="Day14\Day14Solver.prg" />
+    <Compile Include="Day15\Day15Solver.prg" />
+    <Compile Include="Day16\Day16Solver.prg" />
+    <Compile Include="Day17\Day17Solver.prg" />
+    <Compile Include="Day18\Day18Solver.prg" />
+    <Compile Include="Day19\Day19Solver.prg" />
+    <Compile Include="Day20\Day20Solver.prg" />
+    <Compile Include="Day21\Day21Solver.prg" />
+    <Compile Include="Day22\Day22Solver.prg" />
+    <Compile Include="Day23\Day23Solver.prg" />
+    <Compile Include="Day24\Day24Solver.prg" />
+    <Compile Include="Day25\Day25Solver.prg" />
+    <Compile Include="Properties\AssemblyInfo.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Program.prg">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Day01" />
+    <Folder Include="Day02" />
+    <Folder Include="Base" />
+    <Folder Include="Day03\" />
+    <Folder Include="Day04\" />
+    <Folder Include="Day05\" />
+    <Folder Include="Day06\" />
+    <Folder Include="Day07\" />
+    <Folder Include="Day08\" />
+    <Folder Include="Day09\" />
+    <Folder Include="Day10\" />
+    <Folder Include="Day11\" />
+    <Folder Include="Day12\" />
+    <Folder Include="Day13\" />
+    <Folder Include="Day14\" />
+    <Folder Include="Day15\" />
+    <Folder Include="Day16\" />
+    <Folder Include="Day17\" />
+    <Folder Include="Day18\" />
+    <Folder Include="Day19\" />
+    <Folder Include="Day20\" />
+    <Folder Include="Day21\" />
+    <Folder Include="Day22\" />
+    <Folder Include="Day23\" />
+    <Folder Include="Day24\" />
+    <Folder Include="Day25\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Day01\Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Day01\output1.txt" />
+    <None Include="Day01\output2.txt" />
+    <None Include="Day02\Input.txt" />
+    <None Include="Day02\output1.txt" />
+    <None Include="Day02\output2.txt" />
+    <None Include="Day03\input.txt" />
+    <None Include="Day03\output1.txt" />
+    <None Include="Day03\output2.txt" />
+    <None Include="Day04\input.txt" />
+    <None Include="Day04\output1.txt" />
+    <None Include="Day04\output2.txt" />
+    <None Include="Day05\input.txt" />
+    <None Include="Day05\output1.txt" />
+    <None Include="Day05\output2.txt" />
+    <None Include="Day06\input.txt" />
+    <None Include="Day06\output1.txt" />
+    <None Include="Day06\output2.txt" />
+    <None Include="Day07\input.txt" />
+    <None Include="Day07\output1.txt" />
+    <None Include="Day07\output2.txt" />
+    <None Include="Day08\input.txt" />
+    <None Include="Day08\output1.txt" />
+    <None Include="Day08\output2.txt" />
+    <None Include="Day09\input.txt" />
+    <None Include="Day09\output1.txt" />
+    <None Include="Day09\output2.txt" />
+    <None Include="Day10\input.txt" />
+    <None Include="Day10\output1.txt" />
+    <None Include="Day10\output2.txt" />
+    <None Include="Day11\input.txt" />
+    <None Include="Day11\output1.txt" />
+    <None Include="Day11\output2.txt" />
+    <None Include="Day12\input.txt" />
+    <None Include="Day12\output1.txt" />
+    <None Include="Day12\output2.txt" />
+    <None Include="Day13\input.txt" />
+    <None Include="Day13\output1.txt" />
+    <None Include="Day13\output2.txt" />
+    <None Include="Day14\input.txt" />
+    <None Include="Day14\output1.txt" />
+    <None Include="Day14\output2.txt" />
+    <None Include="Day15\input.txt" />
+    <None Include="Day15\output1.txt" />
+    <None Include="Day15\output2.txt" />
+    <None Include="Day16\input.txt" />
+    <None Include="Day16\output1.txt" />
+    <None Include="Day16\output2.txt" />
+    <None Include="Day17\input.txt" />
+    <None Include="Day17\output1.txt" />
+    <None Include="Day17\output2.txt" />
+    <None Include="Day18\input.txt" />
+    <None Include="Day18\output1.txt" />
+    <None Include="Day18\output2.txt" />
+    <None Include="Day19\input.txt" />
+    <None Include="Day19\output1.txt" />
+    <None Include="Day19\output2.txt" />
+    <None Include="Day20\input.txt" />
+    <None Include="Day20\output1.txt" />
+    <None Include="Day20\output2.txt" />
+    <None Include="Day21\input.txt" />
+    <None Include="Day21\output1.txt" />
+    <None Include="Day21\output2.txt" />
+    <None Include="Day22\input.txt" />
+    <None Include="Day22\output1.txt" />
+    <None Include="Day22\output2.txt" />
+    <None Include="Day23\input.txt" />
+    <None Include="Day23\output1.txt" />
+    <None Include="Day23\output2.txt" />
+    <None Include="Day24\input.txt" />
+    <None Include="Day24\output1.txt" />
+    <None Include="Day24\output2.txt" />
+    <None Include="Day25\input.txt" />
+    <None Include="Day25\output1.txt" />
+    <None Include="Day25\output2.txt" />
+  </ItemGroup>
+  <!-- This next bit is required unless the macro used to Import your targets is defined in an MSBuild toolset. -->
+  <ProjectExtensions>
+    <ProjectCapabilities>
+      <ProjectConfigurationsDeclaredAsItems />
+    </ProjectCapabilities>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <RunPostBuildEvent />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <RunPostBuildEvent />
+  </PropertyGroup>
+</Project>
