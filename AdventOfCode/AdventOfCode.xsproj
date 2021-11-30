@@ -55,7 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\DayGenerator.prg" />
-    <Compile Include="Base\SolverConsoleRummer.prg" />
+    <Compile Include="Base\SolverConsoleRunner.prg" />
     <Compile Include="Base\SolverBase.prg" />
     <Compile Include="Day01\Day01Solver.prg" />
     <Compile Include="Day02\Day02Solver.prg" />

@@ -5,7 +5,7 @@ using System.IO
 using System.Linq
 
 
-class SolverConsoleRummer<T> where T is SolverBase, new()
+class SolverConsoleRunner<T> where T is SolverBase, new()
 
     private Solver as T
     
